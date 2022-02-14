@@ -17,7 +17,7 @@ for(i=0;i<10;i++){
     team.addPlayer(player);
 }
 
-console.log(team);
+console.log(team.name);
 
 const app = express();
 

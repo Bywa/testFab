@@ -9,5 +9,5 @@ router.get('/', (req, res) => {
 router.get('/test',(req, res) =>{
     res.render('test');
 })
-
+console.log(team);
 module.exports = router;
