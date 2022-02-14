@@ -1,14 +1,7 @@
-console.log("salut");
-console.log("test");
-const express = require("express");
+const express = require('express');
+const routes = require('./routes/index');
 
 const app = express();
+app.use('/', routes);
 
-
-app.get("/",(req,res)=>{
-    res.send("Test");
-})
-
-app.listen(3000,()=>{
-    console.log("listening on port 3000");
-});
+module.exports = app;
